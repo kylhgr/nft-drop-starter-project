@@ -24,7 +24,7 @@ const App = () => {
          * The solana object gives us a function that will allow us to connect
          * directly with the user's wallet!
          */
-         const esponse = await solana.connect({ onlyIfTrusted: true });
+         const response = await solana.connect({ onlyIfTrusted: true });
          console.log(
            'Connected with Public Key:',
            response.publicKey.toString()
